@@ -55,6 +55,9 @@ fn main() {
         cost /= 2;
     }
     println!("The total cost to get from infamy {start_inf} to {end_inf} is {cost} dollars");
+    println!("Please input anything when you want to end the program");
+    let mut e = String::new();
+    io::stdin().read_line(&mut e).expect("");
 }
 fn above_inf_25(start_inf: i32, end_inf: i32) -> i128 {
     let start_inf: i128 = start_inf as i128; //cloned
